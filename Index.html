@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Full-Screen Video Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...your-sha512-here..." crossorigin="anonymous" />
+    <style>
+        /* Apply styles to the <body> element to remove margins and paddings */
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent scrollbars */
+            display: flex;
+        }
+
+        /* Apply styles to the <video> element to make it cover the entire screen */
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Scale video to fit screen size */
+        }
+               /* Apply styles to the container box */
+               .container {
+                position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* transform: translate(-50%, -50%); */
+            background-color: rgba(0, 0, 0, 0.7);
+            /* border-radius: 20px; */
+            /* padding: 60px; */
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Apply styles to the title */
+        .title {
+            /* transform: translate(-50%, -50%); */
+            top:50%;
+            left:50%;
+            font-size: 80px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+        .text{
+            font-size: 20px;
+            /* font-weight: bold; */
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        /* Apply styles to the button */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: red;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+        .button:hover{
+            background-color: #f44336;
+        }
+        .bottom-container {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            /* padding: 10px; */
+            /* background-color: #f2f2f2; */
+        }
+        .icon-container {
+            position: fixed;
+            right: 0; /* Position the container to the left */
+            height: 100%; /* Set the height of the container to cover the entire viewport */
+            display: flex;
+            flex-direction: column; /* Change the flex direction to column */
+            justify-content: center;
+            gap: 30px; 
+            align-items: center;
+            flex-direction: column;
+            /* padding: 10px; */
+            /* background-color: #f2f2f2; */
+               }
+        
+        .links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            /* padding-inline-start: 30px; */
+            gap: 10px; /* Adds spacing between the links */
+        }
+        
+        .icon {
+            /* padding-left: 0.5em; */
+            padding-right: 10px;
+            margin: 0 5px;
+            font-size: 60px;
+            color: red;
+            
+
+        }
+        .icon-left{
+            padding-right: 10px;
+            margin: 0 5px;
+            font-size: 60px;
+            color: red;
+        }
+        
+        .links a {
+            color: red; /* Sets the link color to red */
+            text-decoration: none; /* Removes the default underline */
+        }
+        
+        .links a:hover {
+            text-decoration: underline; /* Underlines the link on hover */
+        }
+        
+        .row{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop muted playsInline>
+        <source src="VarityShopAccFinal_(73).mp4" type="video/mp4">
+        <!-- Add additional <source> elements for other video formats if needed -->
+        Your browser does not support the video tag.
+    </video>
+    <div class="container">
+        <h1 class="title">VARITY</h1>
+        <div class="text">Exclusively on the SyneticX platform.</div>
+        <a class="button" href="https://syneticslz.github.io/synetic-ss/">Shop Now</a>
+    </div>
+    <div class="icon-container">
+        
+        <div class="icon-left"><i class="fab fa-twitter"></i></div>
+        <div class="icon-left"><i class="fab fa-tiktok"></i></div>
+    
+   
+    <div class="icon"><i class="fab fa-instagram"></i></div>
+    </div>
+    <div class="bottom-container">
+        <div class="links">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Retuns</a>
+        </div>
+    </div>
+</body>
+</html>
